@@ -12,7 +12,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /^(?!.*\.test\.jsx?$).*\.jsx?$/,
         exclude: /node_modules/,
         use: [
           'babel-loader',
@@ -21,6 +21,7 @@ module.exports = {
     ],
   },
   resolve: {
+    extensions: ['.js', '.jsx'],
     modules: [
       path.join(__dirname, 'node_modules'),
     ],

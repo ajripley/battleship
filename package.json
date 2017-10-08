@@ -10,7 +10,8 @@
     "compile": "webpack",
     "eslint": "eslint --ext=js --ext=jsx ./src",
     "precommit": "yarn eslint",
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "jest --verbose"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -24,6 +25,7 @@
     "eslint-plugin-react": "^7.4.0",
     "express": "^4.16.1",
     "husky": "^0.14.3",
+    "jest": "^21.2.1",
     "webpack": "^3.6.0",
     "webpack-dev-middleware": "^1.12.0"
   },
